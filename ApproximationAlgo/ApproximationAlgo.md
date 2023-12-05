@@ -65,15 +65,15 @@ $$
 对于包含两个文字的子句，有，
 $$
 \begin{align}
-v(x_i \or x_j) &= 1 - v(\neg x_i) v(\neg x_j) \\
+v(x_i \lor x_j) &= 1 - v(\neg x_i) v(\neg x_j) \\
 &= 1 - \frac{1-y_0 y_i}{2} \cdot \frac{1-y_0 y_j}{2} \\
 &= \frac{1+y_0 y_i}{4} + \frac{1+y_0 y_j}{4} + \frac{1-y_i y_j}{4} \\
 
-v(\neg x_i \or x_j) &= \frac{1-y_0 y_i}{4} + \frac{1+y_0 y_j}{4} + \frac{1+y_i y_j}{4} \\
+v(\neg x_i \lor x_j) &= \frac{1-y_0 y_i}{4} + \frac{1+y_0 y_j}{4} + \frac{1+y_i y_j}{4} \\
 
-v(x_i \or \neg x_j) &= \frac{1+y_0 y_i}{4} + \frac{1-y_0 y_j}{4} + \frac{1+y_i y_j}{4} \\
+v(x_i \lor \neg x_j) &= \frac{1+y_0 y_i}{4} + \frac{1-y_0 y_j}{4} + \frac{1+y_i y_j}{4} \\
 
-v(\neg x_i \or \neg x_j) &= \frac{1-y_0 y_i}{4} + \frac{1-y_0 y_j}{4} + \frac{1-y_i y_j}{4} \\
+v(\neg x_i \lor \neg x_j) &= \frac{1-y_0 y_i}{4} + \frac{1-y_0 y_j}{4} + \frac{1-y_i y_j}{4} \\
 \end{align}
 $$
 不难发现，只包含两个文字的子句的值都是 $1+y_iy_j$ 和 $1-y_i y_j$ 的线性组合，合并同类项，将每一项的因数分别记为 $a_{ij},b_{ij} \geq 0$，我们可以将目标函数写为，
